@@ -59,3 +59,11 @@ psql -Umarcos -W web-db
 
 
 
+
+
+
+docker exec -it db bash
+psql -Umarcos -h db -p 5432 -d web-db
+
+
+insert into "user" VALUES (1,'marcos', 'adsasd', 'mail+dsa@host.sad', '2008-11-11', 'adasgdajsgdjasgdjas', '329329');
